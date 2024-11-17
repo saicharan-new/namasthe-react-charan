@@ -1,20 +1,11 @@
-/**
- *
- * <div>
- *      <div>
- *      <h1>
- * <div>
- * <div>
- *
- *
- *
- */
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const parent = React.createElement(
   "div",
   { id: "parent" },
   [React.createElement("div", { id: "children" }, [
-    React.createElement("h1", { id: "h1" }, "hi this is child's h1"),
+    React.createElement("h1", { id: "h1" }, "This is namaste React 🗿"),
     React.createElement("h2", { id: "h2" }, "hi this is child's h2"),
   ]),React.createElement("div", { id: "children2" }, [
     React.createElement("h1", { id: "h1" }, "hi this is child's h1"),

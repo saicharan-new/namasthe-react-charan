@@ -1,0 +1,30 @@
+{
+  "name": "namasthe-react",
+  "version": "1.0.0",
+  "description": "this is Namasthe react practice",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saicharan-new/namasthe-react-charan.git"
+  },
+  "keywords": [],
+  "author": "Sai Charan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saicharan-new/namasthe-react-charan/issues"
+  },
+  "homepage": "https://github.com/saicharan-new/namasthe-react-charan#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
