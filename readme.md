@@ -82,3 +82,16 @@ const HeadingComponent = () => {
     </div>
   );
 };
+
+
+{/* we can also use index as key but its not a good pattern. ex: (restaraunt, index), key is uesed for performance imporvement and also to reduce warnings */}
+        {/* not using key(not accepatable warning) <<< index as key <<<<<<< unique id (best practice) */}
+        {/* <RestaurentCard resData={resList[0]}/>
+            <RestaurentCard resData={resList[1]}/>
+            <RestaurentCard resData={resList[2]}/>
+            <RestaurentCard resData={resList[3]}/>
+            <RestaurentCard resData={resList[4]}/> */}
+
+# React Hooks  - normal js utility functions
+- useState()
+- useEffect()
