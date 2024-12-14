@@ -25,6 +25,7 @@ const RestraurantMenu = () => {
     setresInfo(json.data?.cards[2]?.card?.card?.info);
     const menu = json.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]?.card?.card;
     setmenuList(menu);
+    console.log(menu)
   };
     
   const {name,costForTwoMessage,cuisines} = resInfo;
