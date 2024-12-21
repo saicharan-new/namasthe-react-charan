@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* .app {
     padding: 0 45px;
-} */
+} 
 .header {
     display: flex;
     justify-content: space-between;
@@ -85,9 +89,9 @@
 /* .nav-list {
     display: flex;
     list-style-type: none;
-    gap: 24px;
-} */
+    gap: 24px; 
+} 
  .user-card {
     padding: 10px;
     border: 1px solid black;
- }
+ } */

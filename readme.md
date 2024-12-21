@@ -95,3 +95,15 @@ const HeadingComponent = () => {
 # React Hooks  - normal js utility functions
 - useState()
 - useEffect()
+
+
+
+restaurantMenu
+ {/* Only map over menuList.itemCards if it exists */}
+        {/* {menuList?.itemCards?.length > 0 ? (
+          menuList.itemCards.map((menu, index) => (
+            <li key={index}>{menu.card.info.name}</li>
+          ))
+        ) : (
+          <li>No items available</li>
+        )} */}
