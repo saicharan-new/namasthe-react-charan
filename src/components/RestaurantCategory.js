@@ -19,7 +19,7 @@ const RestaurantCategory = ({data, showItem, setshowIndex}) => {
                 <span className="font-bold text-lg">{title}({itemCards.length})</span>
                 <span>{!showItem ? "⬇️" : "⬆️"}</span>
             </div>
-            {showItem && <ItemList items={data.itemCards}/>}
+            {showItem && <ItemList items={data.itemCards} showAddButton={true}/>}
         </div>
     </div>
   )

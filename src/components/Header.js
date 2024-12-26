@@ -3,6 +3,7 @@ import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 const Header = () => {
     const [btnNameReact, setbtnNameReact] = useState(true)
   // console.log("header rendered")
@@ -10,9 +11,15 @@ const Header = () => {
   // useEffect(() => {
   //    console.log("useEffect rendered")
   // }, [btnNameReact]);
+
+
+  // selector --> subscribing  to the store using selector
+  const cartItems = useSelector((store)=> store.cart.items);
+  console.log(cartItems)
+
 const onlineStatus = useOnlineStatus();
 const {loggedInUser} = useContext(UserContext)
-  console.log(loggedInUser)
+  // console.log(loggedInUser)
   return (
     <div className="flex items-center justify-between border border-black h-20 shadow-lg px-[45px] sm: bg-orange-200 lg:bg-orange-100" >
       <div className="w-100">
@@ -28,7 +35,7 @@ const {loggedInUser} = useContext(UserContext)
           <li><Link to = "/about">About Us</Link></li>
           <li><Link to = "/contact">Contact Us</Link></li>
           <li><Link to = "/grocery">Grocery</Link></li>
-          <li>Cart</li>
+          <li className="font-semibold"><Link to = "/cart">Cart -({cartItems ? cartItems.length + "  items" : '0 items' })</Link></li>
           <button className="login-btn p-2 w-fit h-fit " onClick={() =>{
             setbtnNameReact(!btnNameReact);
           }}>{btnNameReact ? 'Login' : 'Logout'}</button>
