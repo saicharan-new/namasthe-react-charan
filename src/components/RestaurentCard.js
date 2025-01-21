@@ -13,6 +13,7 @@ const RestaurentCard = (props) => {
     // console.log(props);
     //(props) => {resName,cuisine} or 
     const {resData} = props;
+    console.log(resData)
     const {cloudinaryImageId, name, cuisines,avgRating,costForTwo} = resData?.info;
     const{deliveryTime} = resData?.info?.sla;
     // console.log("ddddd"+resData?.info)
@@ -38,7 +39,7 @@ const RestaurentCard = (props) => {
       const {resData} = props;
       const{subHeader,header} = resData?.info?.aggregatedDiscountInfoV3;
       // background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%);
-    // width: 83%;
+      // width: 83%;
       return (
         <div className="relative">
           <RestaurentCard {...props}/>
